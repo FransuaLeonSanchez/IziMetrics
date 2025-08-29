@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">izipay</div>
+      <nav class="tabs">
+        <a class="tab active" href="/">Izimetrics</a>
+        <a class="tab" href="/academy">IziAcademy</a>
+        <a class="tab" href="/admin">Admin</a>
+      </nav>
+    </div>
+    <div class="actions"></div>
+  </header>
+  <main class="container">
+    <section class="grid">
+      <aside class="card shop">
+        <h2>La Caserita</h2>
+        <ul class="kv">
+          <li><span class="i i-card"></span><span>Medios de pago</span><span class="chips"><span class="chip">Visa</span><span class="chip">MasterCard</span></span></li>
+          <li><span class="i i-shield"></span><span>Izipay</span><span class="pill ok">Activo</span></li>
+          <li><span class="i i-cash"></span><span>Moneda</span><span>Soles</span></li>
+          <li><span class="i i-user"></span><span>Representante</span><span>Juan Pérez</span></li>
+          <li><span class="i i-pin"></span><span>Ubicación</span><span>Lima - 150101</span></li>
+          <li><span class="i i-clock"></span><span>Antigüedad</span><span>1.3 años</span></li>
+        </ul>
+      </aside>
+      <section class="card sales">
+        <div class="card-header">
+          <h3>Total Ventas</h3>
+          <div class="period">Agosto 2025</div>
+        </div>
+        <div class="chart">
+          <svg viewBox="0 0 1000 240" preserveAspectRatio="none" class="line">
+            <defs>
+              <linearGradient id="fill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#3bceb5" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#3bceb5" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,200 C80,160 160,120 240,140 C320,160 400,120 480,140 C560,160 640,60 720,110 C800,160 880,100 960,140" fill="none" stroke="#39c1b1" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="720" cy="110" r="8" fill="#fff" stroke="#39c1b1" stroke-width="6"/>
+            <rect x="700" y="60" rx="12" ry="12" width="100" height="48" fill="#fff" filter="url(#sh)"/>
+          </svg>
+          <div class="point"><span>2890</span></div>
+        </div>
+        <div class="months">Enero Febrero Marzo Abril Mayo Junio Julio Agosto Setiembre Octubre Noviembre Diciembre</div>
+      </section>
+      <section class="row">
+        <section class="card alerts">
+          <h3>Riesgos y Alertas</h3>
+          <div class="alert-grid">
+            <div class="box emphasis">
+              <h4>Bloqueos por inactividad (global)</h4>
+              <div class="value big">33%</div>
+              <p>Insight: El 33% de negocios bloqueados fue por inactividad, revisa tu frecuencia de uso.</p>
+            </div>
+            <div class="box">
+              <h4>Ciclo de vida</h4>
+              <div class="value">1.3 años</div>
+              <p>Insight: Negocios de tu rubro suelen crecer más en el 2do año.</p>
+            </div>
+            <div class="box">
+              <h4>Bloqueos por inactividad en Lima</h4>
+              <div class="value">50%</div>
+              <p>Insight: El 50% de negocios en tu provincia fueron bloqueados por inactividad.</p>
+            </div>
+          </div>
+        </section>
+        <section class="card banking">
+          <h3>Bancarización y Finanzas</h3>
+          <div class="panel">
+            <div class="label">Banco más frecuente en tu provincia</div>
+            <div class="bank">BCP</div>
+            <div class="meta">Participación ~50%</div>
+            <p class="insight">La mayoría de negocios de tu provincia operan con BCP.</p>
+          </div>
+        </section>
+        <aside class="card pos">
+          <h3>Estado del POS</h3>
+          <div class="status">
+            <div class="state">Nuevo</div>
+            <div class="opened">Apertura: 2024-05-10</div>
+          </div>
+          <ul class="kv small">
+            <li><span>Izipay activo</span><span class="pill ok">OK</span></li>
+            <li><span>Página web</span><span class="pill ok">OK</span></li>
+            <li><span>Arise!</span><span class="pill pending">Pendiente</span></li>
+          </ul>
+          <div class="kv small">
+            <div class="kv-row"><span>Banco</span><span>BCP</span></div>
+            <div class="kv-row"><span>Número de cuenta</span><span>1234567890</span></div>
+          </div>
+        </aside>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

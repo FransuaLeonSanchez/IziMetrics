@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">izipay</div>
+      <nav class="tabs">
+        <a class="tab" href="/">Izimetrics</a>
+        <a class="tab" href="/academy">IziAcademy</a>
+        <a class="tab active" href="/admin">Admin</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container admin">
+    <section class="admin-grid">
+      <div class="card map"></div>
+      <div class="card donuts">
+        <div class="donut-row">
+          <div class="donut">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" stroke="#e5eef3" stroke-width="12" fill="none"/><circle cx="50" cy="50" r="34" stroke="#63d0c0" stroke-width="12" fill="none" stroke-dasharray="220 999" stroke-linecap="round" transform="rotate(-90 50 50)"/></svg>
+            <div class="donut-label"><b>65%</b><span>Adopción</span></div>
+          </div>
+          <div class="donut">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" stroke="#e5eef3" stroke-width="12" fill="none"/><circle cx="50" cy="50" r="34" stroke="#63d0c0" stroke-width="12" fill="none" stroke-dasharray="160 999" stroke-linecap="round" transform="rotate(-90 50 50)"/></svg>
+            <div class="donut-label"><b>300</b><span>Alertas</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card barchart">
+        <svg viewBox="0 0 300 160" preserveAspectRatio="none" class="bars">
+          <rect x="30" y="40" width="40" height="100" rx="6" fill="#ef6b63"/>
+          <rect x="100" y="60" width="40" height="80" rx="6" fill="#ef6b63"/>
+          <rect x="170" y="80" width="40" height="60" rx="6" fill="#ef6b63"/>
+        </svg>
+        <div class="chart-caption">Usuarios Potenciales</div>
+      </div>
+      <div class="card linechart">
+        <svg viewBox="0 0 600 180" class="line" preserveAspectRatio="none">
+          <path d="M0,120 C60,140 120,80 180,110 C240,140 300,120 360,140 C420,160 480,80 540,130" fill="none" stroke="#63d0c0" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <div class="chart-caption">KPIs de Conversión</div>
+      </div>
+      <div class="card table">
+        <div class="table-head">
+          <span>Tienda</span><span>Ubicación</span><span>RUC</span><span>Latitud</span><span>Longitud</span><span>Ventas</span>
+        </div>
+        <div class="table-row"><span>Bodega San Juan</span><span>Lima</span><span>10234567891</span><span>-12.0464</span><span>-77.0428</span><span>S/ 21,000</span></div>
+        <div class="table-row"><span>Farmacia Vida</span><span>Cusco</span><span>20567891234</span><span>-13.5320</span><span>-71.9675</span><span>S/ 12,800</span></div>
+      </div>
+      <div class="card map route"></div>
+    </section>
+  </main>
+</body>
+</html>
+

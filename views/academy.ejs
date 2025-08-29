@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">izipay</div>
+      <nav class="tabs">
+        <a class="tab" href="/">Izimetrics</a>
+        <a class="tab active" href="/academy">IziAcademy</a>
+        <a class="tab" href="/admin">Admin</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="courses-grid">
+      <%- include('partials/course-card', {image:'course-1', time:'35 min', level:'Intermedio', title:'Introduce Arisel para fidelizar clientes', reason:'Aún no usas Arisel para CRM'}) %>
+      <%- include('partials/course-card', {image:'course-2', time:'22 min', level:'Intermedio', title:'Cómo crecer más en el 2º año', reason:'Estás antes del segundo año de operación'}) %>
+      <%- include('partials/course-card', {image:'course-3', time:'15 min', level:'Principiante', title:'Presupuesto y Ahorro para tu negocio', reason:'Curso base recomendado para todos'}) %>
+      <%- include('partials/course-card', {image:'course-4', time:'20 min', level:'Principiante', title:'Mi historial crediticio', reason:'Mejora tu perfil crediticio para financiamiento'}) %>
+      <%- include('partials/course-card', {image:'course-5', time:'18 min', level:'Intermedio', title:'Buenas prácticas antifraude en POS', reason:'Detectamos historial de fraude'}) %>
+      <%- include('partials/course-card', {image:'course-6', time:'25 min', level:'Principiante', title:'Configura y saca provecho de Izipay', reason:'Aún no tienes Izipay activo'}) %>
+    </section>
+  </main>
+</body>
+</html>
+
